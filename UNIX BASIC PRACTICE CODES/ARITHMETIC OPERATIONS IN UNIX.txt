@@ -1,0 +1,45 @@
+#ARITHMETIC CODES
+#!/bin/sh
+x=15
+y=30
+#EXAMPLE OF USING + OPERATOR
+adt=`expr $x + $y`
+echo "x + y : $adt"
+
+#EXAMPLE OF USING - OPERATOR
+sub=`expr $x - $y`
+echo "x-y : $sub"
+
+#EXAMPLE OF USING * OPERATOR
+mul=`expr $x * $y`
+echo "x*y : $mul"
+
+#EXAMPLE OF USING / OPERATOR
+div=`expr $y / $x`
+echo "y/x = $div"
+
+#EXAMPLE OF USING % OPERATOR
+mod=`expr $x % $y`
+echo "x%y = $mod"
+
+
+#IF-ELSE STATEMENTS 
+#y=15
+if [ $x == $y ]
+then
+echo "x is equal to y"
+else
+echo "x is not equal to y"
+fi
+
+if [ $x != $y ]
+then
+echo "x IS NOT EQUAL TO y"
+fi
+
+
+y=15
+if [ $x == $y ]
+then
+echo "x IS EQUAL TO y"
+fi
